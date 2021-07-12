@@ -1,0 +1,511 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* header starts */
+#header{
+    background-image: url(../images/slide.jpg);
+    position: relative;
+    height: 100vh;
+    opacity: 0.91;
+}
+
+#header .icons{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+}
+#header .icons span{
+    margin-right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+
+#header .info{
+    position: absolute;
+    top: 25% ;
+    right: 60px;
+    text-align: right;
+}
+
+#header .info h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+#header .info p{
+    margin: 25px 0;
+    font-size: 20px;
+}
+#header .info a{
+    background: white;
+    color: #45489a;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-align: center;
+    font-weight: 700;
+}
+#header .info a:hover{
+    background: #45489a;
+    color: white;
+    transition: all 0.5s;
+}
+
+/* header ends */
+
+/* aside */
+
+aside{
+    width: 22.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(12,12,12,0.9);
+    height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    line-height: 100px;
+    background-color: #45489a;
+    padding: 20px;
+    text-align: center;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid rgba(250,250,250,0.5);
+}
+
+nav{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    padding: 50px;
+}
+nav ul li{
+    list-style-type: circle;
+    position: relative;
+    margin-left: 0;
+}
+nav ul li:hover{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+nav ul li a{
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+nav ul li::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    top: 75%;
+    left: -40%;
+}
+
+nav ul li:hover::before{
+    width: 35px;
+    transition: all 0.5s;
+}
+
+.sosial-icons{
+    position: absolute;
+    top: 90%;
+    width:100%;
+}
+.sosial-icons ul{
+    margin: 0 auto;
+    width: 80%;
+}
+.sosial-icons ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.sosial-icons ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+/* aside ends */
+
+
+/* main starts */
+
+main{
+    margin-top: 50px;
+    width: 77.5%;
+    float: right;
+    color: #000;
+
+    /* float: right dəyəri burda main hissəni sağa sürüşdürmək üçün istifadə olunur.
+        Amma istəsəniz, keçən dəfə verdiyim { position:relative; left: 22.5% } property-lərindən
+        istifadə edə bilərsiniz.
+    */
+}
+/* BU SELECTORA DIQQƏT!!! */
+main>*:not(#video,#map){
+    padding: 50px;
+}
+
+/* section: featured places starts */
+#featured_places .heading{
+    margin-right: 65px;
+}
+.heading>div{
+    display: inline-block;
+}
+.heading h3{
+    margin-top: 0px;
+    font-size: 32px;
+    color: #232323;
+    margin-right: 50px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.heading .blue{
+    color: #45489a;
+    font-weight: 700;
+}
+.heading .text p{
+    font-size: 15px;
+    line-height: 35px;
+    color: #343434;
+}
+#featured_places .heading .icons{
+    float: right;
+    margin-top: 10px;
+    font-weight: 300;
+}
+#featured_places .heading .icons span{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 42px;
+    background-color: #eee;
+    color: #232323;
+    font-size: 42px;
+    margin-right: 15px;
+}
+
+#featured_places .content{
+    margin: 20px 0;
+}
+.content .project{
+    width: 28%;
+    margin-right: 30px;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+}
+.project .content-container{
+    position: relative;
+    z-index: 10;
+    background: #fff;
+}
+.content .project .image{
+    width: 100%;
+    position: relative;
+}
+.content .project .image img{
+    width: 100%;
+}
+.content .project .title{
+    margin-top: 10px;
+}
+.content .project .title h4{
+    font-size: 15px;
+    color: #7a7a7a;
+    letter-spacing: 0.5px;
+    margin-bottom: 12.5px;
+}
+.content .project .description p{
+    font-size: 13px;
+    color: #7a7a7a;
+    line-height: 24px;
+}
+
+.content .project .more a{
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(69,72,154, 0.9);
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 9;
+    bottom: -44px;
+    opacity: 0;
+}
+.content .project :hover .more a{
+    opacity: 1;
+    bottom: 0;
+}
+/* section: featured places ends */
+
+/* section: projects places starts */
+#projects{
+    margin: 50px 0;
+}
+#projects .image{
+    padding: 15px 15px 15px 0;
+}
+#projects .image:first-child{
+    width: 60%;
+}
+.image img{
+    width: 100%;
+}
+
+#projects .image,
+.col{
+    display: inline-block;
+}
+
+#projects .image:hover{
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+/* Bu section üçün yazdığım css heç əlveriişli deyil, bunun üçün grid sistemini və flex-i bilməyiniz lazımdır.
+Bilirəm bilirsiniz, amma dərsini keçməyənə yazmamağınızı məsləhət bilirəm. */
+
+/* section: projects places ends */
+
+
+/* section: video starts */
+#video{
+    margin: 50px 0;
+    margin-right: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 100px 60px;   
+}
+#video .heading h1{
+    font-size: 32px;
+    color: #232323;
+    font-weight: 300;
+}
+#video .heading .caption p{
+    font-size: 15px;
+    line-height: 35px;
+    color: #343434;
+}
+#video .heading .description p{
+    font-size: 13px;
+    color: #7a7a7a;
+    line-height: 24px;
+}
+
+#video .btn_continue{
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #45489a;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 25px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#video .btn_continue:hover{
+    color: #45489a;
+    background-color: white;
+}
+/* section: video ends */
+
+/* section: blogs start */
+
+#blogs .content{
+    margin: 50px 0;
+    background: #f4f4f4;
+}
+#blogs .blog-header{
+    border-bottom: 10px solid #45489a;
+}
+#blogs .blog-nav:first-child{
+    background-color: #45489a;
+    color: white;
+}
+#blogs .blog-nav{
+    display: inline-block;
+    padding: 30px 15px;
+    color: #232323;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+}
+
+#blogs .blog{
+    margin-top: 20px;
+}
+#blogs .blog:not(:last-child){
+    border-bottom:1px solid #e6e6e6 ;
+}
+#blogs .blog>div{
+    display: inline-block;
+}
+
+#blogs .blog-body{
+    position: relative;
+    padding: 20px;
+}
+
+.blog-image{
+    width: 35%;
+}
+.blog-image img{
+    width: 100%;
+}
+.blog-content{
+    width: 60%;
+    margin-left: 20px;
+    padding: 10px;
+    color: #232323;
+    position: relative;
+    top: -30px;
+}
+.blog-content .title h3{
+    font-weight: 400;
+    font-size: 22px;
+    margin: 20px 0;
+}
+.blog-content .date h4 {
+    font-size: 20px;
+    color: #7a7a7a;
+    margin: 20px 0;
+}
+.blog-content .text p{
+    margin: 10px 0;
+    color: #7a7a7a;
+    font-size: 13px;
+}
+.blog-content .more_button a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #45489a;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    margin: 20px 0;
+    transition: all 0.5s;
+}
+.blog-content .more_button a:hover{
+    color: #45489a;
+    background-color: white;
+}
+/* section: blogs end */
+
+/* section: contact starts */
+#contact .content{
+    margin: 50px 0;
+
+}
+#contact .content .input-field{
+    width: 100%;
+    margin: 20px 0;
+}
+.input-field .input_text{
+    display: inline-block;
+    width: 31.5%;
+}
+.input-field .input_text:not(:last-child){
+    margin-right: 20px;
+}
+.input-field input{
+    padding: 15px;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+}
+
+.textarea-field{
+    width: 100%;
+}
+.textarea-field textarea{
+    width: 100%;
+    background: #f4f4f4;
+    padding: 20px;
+    border: none;
+}
+.button{
+    margin: 20px 0;
+}
+.button button{
+    width: 100%;
+    border: none;
+    background: #45489a;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+/* section: contact ends */
+
+/* footer starts */
+footer{
+    background: rgba(12,12,12,0.9);
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    padding: 15px 0;
+}
+/* footer ends */
+
+/* main ends */
+
+html{
+    scroll-behavior: smooth;
+
+    /* Bu, səhifə scroll olunanda hərəkətli şəkildə scroll olunmaq üçün istifadə olunur.
+       Fərqi kod sətrini commentə atmaqla görə bilərsiniz.
+    */
+}
