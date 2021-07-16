@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+  header .navbar {
+    display: none;
+  }
+  header .navbar-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar-responsive nav {
+    width: 90%;
+  }
+  header .logo {
+    width: 40% !important;
+  }
+  header .logo a {
+    font-size: 14px !important;
+  }
+  header .center-text {
+    margin: 40px auto;
+    width: 80%;
+  }
+  header .center-text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  header .center-text h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  header .center-text .btn {
+    padding: 8px;
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+  }
+  #about .content {
+    padding: 50px 0 0 0;
+  }
+  #about .content .title h2 {
+    font-size: 1.4rem;
+  }
+  #about .content .text {
+    width: 90%;
+  }
+  #projects {
+    width: 90%;
+  }
+  #projects .shoreline .left-side {
+    width: 100%;
+  }
+  #projects .shoreline .right-side {
+    width: 100%;
+  }
+  #projects .projects {
+    padding: 50px 0;
+  }
+  #projects .projects .project .left-side, #projects .projects .project .right-side {
+    width: 100%;
+  }
+  #projects .projects .project .right-side {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #contact {
+    padding: 4rem 0;
+  }
+  #contact > div {
+    width: 90% !important;
+  }
+  #contact .text p {
+    font-size: 1.2rem;
+  }
+  #contact .contact-form form input[type=text], #contact .contact-form form input[type=button] {
+    width: 50% !important;
+    font-size: 12px !important;
+    padding: 10px !important;
+  }
+  #contact .info .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

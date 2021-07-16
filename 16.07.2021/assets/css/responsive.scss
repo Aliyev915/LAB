@@ -1,0 +1,100 @@
+@media screen and (max-width:768px) {
+    header{
+        .navbar{
+            display: none;
+        }   
+        .navbar-responsive{
+            display: flex;
+            nav{
+                width: 90%;
+            }
+        }
+        .logo{
+            width: 40% !important;
+            a{
+                font-size: 14px !important;
+            }
+        }
+        .center-text{
+            margin: 40px auto;
+            width: 80%;
+            h1{
+                font-size: 2rem ;
+                line-height: 2rem ;
+            }
+            h2{
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+            .btn{
+                padding: 8px;
+                font-size: 10px;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+
+    #about{
+        .content{
+            padding: 50px 0 0 0 ;
+            .title{
+                h2{
+                    font-size: 1.4rem;
+                }
+            }
+            .text{
+                width: 90%;
+            }
+        }
+    }
+
+    #projects{
+        width: 90%;
+        .shoreline{
+            .left-side{
+                width: 100%;
+            }
+            .right-side{
+                width: 100%;
+            }
+        }
+        .projects{
+            padding: 50px 0;
+            .project{
+                .left-side,.right-side{
+                    width: 100%;
+                }
+                .right-side{
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    #contact{
+        padding: 4rem 0;
+        >div{
+            width: 90% !important;
+        }
+        .text{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .contact-form{
+            form{
+                input[type=text],input[type=button]{
+                    width: 50% !important;
+                    font-size: 12px !important;
+                    padding: 10px !important;
+                }
+            }
+        }
+        .info{
+            .box{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+}
