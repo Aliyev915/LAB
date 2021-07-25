@@ -2,7 +2,7 @@
 
 #home {
     background: url(../images/home-bg.jpg);
-    height: 80vh;
+    height: 100%;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -10,12 +10,13 @@
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding: 5rem 0;
     .overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 80vh;
+        height: 100%;
         background: linear-gradient(to left, $ternary-background, $secondary-background);
         opacity: 0.9;
     }
@@ -29,6 +30,28 @@
     .home-content {
         position: relative;
         padding: 3.2rem 0 0 3.2rem;
+    }
+}
+
+// home responsive
+@media screen and (max-width: 768px) {
+    #home {
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    #home {
+        .home-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -95,6 +118,29 @@
             h4 {
                 font-weight: bold;
                 color: $dark;
+            }
+        }
+    }
+}
+
+// about responsive
+
+@media screen and (max-width:768px)
+{
+    #about{
+        text-align: center;
+        h1{
+            font-size: 2.5rem;
+        }
+        .left{
+            h2{
+                font-size: 2.2rem;
+            }
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1.4rem;
             }
         }
     }
@@ -168,6 +214,7 @@
 
     .contact-form {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 5rem;
         .form-input {
             display: block;
@@ -197,8 +244,8 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             height: 55px;
-            padding: $spacing $spacing*2;
-            &:hover{
+            padding: $spacing $spacing * 2;
+            &:hover {
                 background: transparent;
                 color: #fff;
             }
