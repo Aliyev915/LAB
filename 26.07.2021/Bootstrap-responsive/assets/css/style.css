@@ -1,0 +1,14 @@
+.card{
+    width: 98% !important;
+    margin: 10px 0;
+}
+
+footer{
+    color: white;
+}
+
+footer ul li{
+    list-style: none;
+    font-size: 14px;
+    margin: 10px 0;
+}
