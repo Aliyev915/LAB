@@ -1,0 +1,10 @@
+n natural ədədi verilmişdir. Həmin ədəddən öz rəqəmlərinin cəmini çıxaq.
+   Alınan ədəddən də yenə öz rəqəmlərinin cəmini çıxaq və s.
+   Bu prosesi nə qədər ki, alınan ədəd müsbətdir davam etdirəcəyik.
+   Verilmiş əməliyyatı neçə dəfə icra edəcəyik?
+   Məsələn, 44 ədədi üçün 5 addımda baş verir:
+    44-8 = 36 (1)
+    36-9 = 27 (2)
+    27-9 = 18 (3)
+    18-9 = 9  (4)
+    9-9 = 0   (5)
