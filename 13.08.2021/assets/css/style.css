@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    width: 1275px;
+    margin: 0 auto;
+}
+
+.accordion{
+    width: 50%;
+    margin: 100px auto;
+}
+
+.title{
+    background-color: #8b8a86;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.title h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.description{
+    border: 1px  solid #8b8a86;
+    height: 0;
+    overflow: hidden;
+}
+
+.description p{
+    font-size: 16px;
+}
+
+.description.active{
+    padding: 10px;
+    height: auto;
+}
