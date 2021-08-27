@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+ul{
+    padding-left: 0;
+    li{
+        list-style: none;
+        font-size: 2rem;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+
+header{
+    background-color: #3DB2FF;
+    color: white;
+    .logo{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .nav-list{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li.list-item{
+                width: 20%;
+                text-transform: uppercase;
+            }
+            .dropdown{
+                position: relative;
+                ul.drop-menu{
+                    display: none;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background-color: #3DB2FF;
+                    position: absolute;
+                    top: 180%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .burger{
+        display: none;
+        width: 10%;
+        i{
+            font-size: 2.5rem;
+            transition: transform .5s;
+        }
+    }
+}
+
+.fa-caret-right{
+    display: none !important;
+}
+.fa-caret-down{
+    display: inline-block !important;
+}
+
+@media screen and (max-width:992px){
+    header{
+        .burger{
+            display: block;
+        }
+    }
+    .fa-caret-right{
+        display: inline-block !important;
+    }
+    .fa-caret-down{
+        display: none !important;
+    }
+    header{
+        .nav-list{
+            ul{
+                display: none;
+                li.list-item{
+                    width: 100%;
+                }
+            }
+        }
+        .nav-list{
+            ul{
+                .dropdown{
+                    ul.drop-menu{
+                        position: static;
+                    }
+                }
+            }
+        }
+    }
+}
